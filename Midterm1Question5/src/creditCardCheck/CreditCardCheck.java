@@ -19,7 +19,7 @@ public class CreditCardCheck {
 	}
 
 	
-	public static boolean luhnTest(String cardNumber) {
+	private static boolean luhnTest(String cardNumber) {
 		int s1 = 0, s2 = 0;
 		String reverse = new StringBuffer(cardNumber).reverse()
 				.toString();
